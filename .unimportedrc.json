@@ -1,0 +1,6 @@
+{
+  "entry": ["index.{js,ts,jsx,tsx}"],
+  "extensions": [".ts", ".js", ".tsx", ".jsx"],
+  "ignorePatterns": ["**/node_modules/**"],
+  "ignoreUnimported": ["webpack.config.js"]
+}

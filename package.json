@@ -1,0 +1,50 @@
+{
+  "name": "puzzle_generator",
+  "version": "2.1.0",
+  "description": "Create customized Crossword, Fill-In, and Word Search puzzles online. Choose grid sizes from 10x10 to 25x25, add words manually or via Excel, and download high-quality PDFs with puzzles and solutions.",
+  "private": true,
+  "main": "index.jsx",
+  "unpkg": "dist/puzzle_generator.js",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "dev",
+    "components"
+  ],
+  "author": {
+    "name": "Eric Manalich Cossio"
+  },
+  "keywords": [
+    "crossword",
+    "puzzle",
+    "word search",
+    "fill-in",
+    "react"
+  ],
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "exceljs": "latest",
+    "html-to-image": "latest",
+    "jspdf": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "scripts": {
+    "start": "webpack --mode development --watch",
+    "test": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/plugin-transform-class-properties": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "babel-loader": "latest",
+    "terser-webpack-plugin": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  }
+}
