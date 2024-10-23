@@ -167,7 +167,7 @@ function App() {
             component="div"
             sx={{ flexGrow: 1, marginLeft: 1 }}
           >
-            Employee Activities
+            Puzzle Generator
           </Typography>
           <Hint hint={hint} setHint={setHint} />
           <ImportExcel setData={importExcelData} />
