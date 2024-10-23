@@ -45,8 +45,8 @@ const ExportPDF = ({
     const body = {
       h1: title,
       h2: "Puzzle Generator",
-      h3: "",
-      h4: "linkedin.com/in/eric-manalich-cossio",
+      h3: "https://www.linkedin.com/in/eric-manalich-cossio",
+      h4: "https://ericmannalich.github.io/puzzle_generator",
       img: "./logo.png",
       imgWidth: 60,
       imgHeight: 60,

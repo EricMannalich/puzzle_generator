@@ -277,16 +277,24 @@ async function ReportPDF(newPDF = {}) {
     lastObject = setText(PDF.body.h2, "left", 16, "bold", 400, 8) - 2;
 
     //h3
-    lastObject = setText(PDF.body.h3, "left", 11, "bold", 300, 20);
+    // lastObject = setText(PDF.body.h3, "left", 11, "bold", 300, 20);
+    lastObject += 20;
+    doc.setFont(font, "bold");
+    doc.setFontSize(11);
+    const h3 = PDF.body.h3;
+    doc.textWithLink(h3, marginLeft, lastObject, { url: h3 });
+    lastObject += 20;
+    const h4 = PDF.body.h4;
+    doc.textWithLink(h4, marginLeft, lastObject, { url: h4 });
 
     //h4
-    if (PDF.body.h4?.length > 0) {
-      doc.setFont(font, "normal");
-      doc.setFontSize(11);
-      var h4 = doc.splitTextToSize(PDF.body.h4, 200);
-      doc.text(h4, marginLeft, (lastObject += 20));
-      lastObject += (h4.length - 1) * 15;
-    }
+    // if (PDF.body.h4?.length > 0) {
+    //   doc.setFont(font, "normal");
+    //   doc.setFontSize(11);
+    //   var h4 = doc.splitTextToSize(PDF.body.h4, 200);
+    //   doc.text(h4, marginLeft, (lastObject += 20));
+    //   lastObject += (h4.length - 1) * 15;
+    // }
 
     if (lastObject < marginTop + imgHeight) {
       lastObject = marginTop + imgHeight;
