@@ -67,6 +67,19 @@ function App() {
     JSON.parse(localStorage.getItem("puzzle_wordBD") || "{}")
   );
 
+  React.useEffect(() => {
+    if (wordList) {
+      const newWordBD = { ...wordBD };
+      wordList.forEach((element) => {
+        if (!(element in newWordBD)) {
+          newWordBD[element] = "";
+        }
+      });
+      setWordBD(newWordBD);
+      localStorage.setItem("puzzle_wordBD", JSON.stringify(newWordBD));
+    }
+  }, [wordList]);
+
   const importExcelData = (data = []) => {
     let wordBDcopy = { ...wordBD };
     let word_list = [];
