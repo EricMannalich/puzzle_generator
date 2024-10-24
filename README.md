@@ -1,4 +1,4 @@
-# React Image Upload and Editor Module
+# React Puzzle Generator 
 
 This React aplication allows users create customized Crossword, Fill-In, and Word Search puzzles online. Choose grid sizes from 10x10 to 25x25, add words manually or via Excel, and download high-quality PDFs with puzzles and solutions.
 
